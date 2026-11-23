@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/songloft-org/plugin-toolchain/main/schemas/plugin.schema.json",
+  "entryPath": "music-scraper",
+  "name": "曲库刮削",
+  "description": "识别本地录音，补写原生标签并整理曲库",
+  "author": "Songloft Team",
+  "homepage": "https://github.com/songloft-org/songloft-plugin-music-scraper",
+  "license": "Apache-2.0",
+  "version": "0.2.0",
+  "main": "main.js",
+  "renderEngine": "lynx",
+  "staticHash": false,
+  "permissions": ["storage", "songs.read", "songs.write"],
+  "updateUrl": "https://raw.githubusercontent.com/songloft-org/songloft-plugin-music-scraper/main/plugin.json"
+}

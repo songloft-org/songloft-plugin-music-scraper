@@ -1,0 +1,24 @@
+{
+  "name": "songloft-plugin-music-scraper",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "songloft-plugin build",
+    "dev": "songloft-plugin dev",
+    "validate": "cd dist/_build && songloft-plugin validate",
+    "typecheck": "tsc --noEmit && pnpm --dir frontend typecheck"
+  },
+  "devDependencies": {
+    "@songloft/plugin-builder": "2.25.0",
+    "@songloft/plugin-sdk": "2.25.0",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "dependencies": {
+    "opencc-js": "1.4.2"
+  }
+}
