@@ -31,6 +31,8 @@ pnpm install --frozen-lockfile
 npm run dev
 ```
 
+Run `pnpm install --frozen-lockfile` again after updating the source to sync dependencies. If the dev build cannot resolve `opencc-js/t2cn`, stop the watcher, install dependencies, and restart `npm run dev`.
+
 The dev command connects to `http://localhost:58091` by default. Use `npm run dev -- --host http://localhost:58191` to target a different instance. After the first login, the toolchain builds, uploads, and enables the plugin. It then watches the backend and Lynx frontend sources and uploads a new build after changes. Development login settings are saved locally in `.songloft-dev.json`.
 
 The plugin’s QuickJS backend handles matching, Chinese conversion, organization presets, and job state. The host bridge provides library queries, per-track fingerprints, lyric and artwork provider lookups, and tag writes and moves with source-file checks. The plugin keeps AcoustID settings and job results in its host storage.

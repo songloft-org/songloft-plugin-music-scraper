@@ -6,6 +6,7 @@
   "author": "Songloft Team",
   "homepage": "https://github.com/songloft-org/songloft-plugin-music-scraper",
   "license": "Apache-2.0",
+  "icon": "icon.svg",
   "version": "0.2.0",
   "main": "main.js",
   "renderEngine": "lynx",

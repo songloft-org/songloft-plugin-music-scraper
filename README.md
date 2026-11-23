@@ -31,6 +31,8 @@ pnpm install --frozen-lockfile
 npm run dev
 ```
 
+更新源码后重新运行 `pnpm install --frozen-lockfile` 同步依赖。如果开发构建提示无法解析 `opencc-js/t2cn`，先停止监听，安装依赖后重新运行 `npm run dev`。
+
 开发命令默认连接 `http://localhost:58091`。通过 `npm run dev -- --host http://localhost:58191` 可指定其他实例。首次登录后，工具链会构建、上传并启用插件，之后监听后端和 Lynx 前端源码的改动，重新构建并上传。开发登录配置保存在本地 `.songloft-dev.json`。
 
 插件的 QuickJS 后端负责匹配、繁简转换、整理预设和任务状态。宿主 Bridge 提供曲库查询、按曲目补算指纹、歌词与封面提供者查询，以及带源文件检查的标签写入和移动。AcoustID 设置和任务结果保存在插件的宿主存储中。
